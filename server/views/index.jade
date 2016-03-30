@@ -1,0 +1,18 @@
+extends ../includes/layout
+
+block main-content
+    section.content
+       div(ng-view)
+    h2= mongoMessage
+
+        h2 Sign in
+    form(name="signUpForm", method="post", action="/auth/signIn")
+        |User Name:
+        input(name="userName", id="userName")
+
+        |Password:
+        input(name="password", id="password")
+
+        input(type="submit", value="Sign In")
+
+

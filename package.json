@@ -6,10 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines":{
+    "node":"4.2.x",
+    "npm": "3.7.x"
+  },
   "author": "Minko Todorov",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
-    "jade": "^1.11.0"
+    "express-session": "^1.13.0",
+    "grunt": "^0.4.5",
+    "jade": "^1.11.0",
+    "mongoose": "^4.4.2",
+    "morgan": "^1.6.1",
+    "passport": "^0.3.2",
+    "stylus": "^0.53.0"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7"
   }
 }
