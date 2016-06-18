@@ -2,6 +2,7 @@
   "name": "meanapp",
   "description": "extreme tech training",
   "main": "index.js",
+  "start": "nodemon server.js",
   "authors": [
     "Minko Todorov"
   ],

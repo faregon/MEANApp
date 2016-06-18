@@ -2,7 +2,8 @@ var express = require('express'),
     stylus = require('stylus'),
     logger = require('morgan'),
     bodyParser = require('body-parser'),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    passport = require('passport');
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV  || 'development';
 
