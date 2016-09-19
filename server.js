@@ -25,7 +25,7 @@ app.use(stylus.middleware(
     }
 ));
 app.use(express.static(__dirname + '/public'));
-if(env === "development"){
+if(env === "prod"){
 mongoose.connect('mongodb://localhost/meanapp');
 }else{
 mongoose.connect('mongodb://admin:password@ds011890.mlab.com:11890/meanapptest');
@@ -41,7 +41,7 @@ var messageSchema = mongoose.Schema({message: String});
 var Message = mongoose.model('Message', messageSchema);
 var mongoMessage;
 
-Message.findOne().exec(function(err, messageDoc) {
+Messe.findOne().exec(function(err, messageDoc) {
     mongoMessage = messageDoc.message;
 });
 
